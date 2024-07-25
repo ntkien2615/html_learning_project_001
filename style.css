@@ -63,20 +63,21 @@ nav{
     margin: auto;
     padding: 2rem;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
 }
 
 nav ul{
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
-    align-items: center;
+    align-items: right;
     list-style: none;
-}
-
-#logo{
-    flex: 1 1 40rem;
-    font-family: "Pattaya",sans-serif;
-    font-weight: 400;
 }
 
 .hero{
@@ -94,5 +95,4 @@ nav ul{
 
 .hero h3{
     padding: 3rem;
-
 }
