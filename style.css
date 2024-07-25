@@ -72,6 +72,7 @@ nav{
     font-weight: 400;
 }
 
+
 nav ul{
     display: flex;
     flex: 1 1 40rem;
@@ -96,3 +97,4 @@ nav ul{
 .hero h3{
     padding: 3rem;
 }
+
