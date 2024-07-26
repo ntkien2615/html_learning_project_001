@@ -98,3 +98,13 @@ nav ul{
     padding: 3rem;
 }
 
+@media screen and (max-width: 932px){
+    nav{
+        text-align: center;
+
+    }
+    
+    #logo{
+        padding: 1 rem;
+    }
+}
