@@ -47,9 +47,8 @@ button{
     color: white;
     cursor: pointer;
     transition: background 0.5s cubic-bezier(0.37, 0, 0.63, 1);
-    animation: cloudAnimation 2s;
-
 }
+
 button:hover{
     background: #406fa8;
 }
@@ -114,7 +113,7 @@ nav ul{
     align-items: center;
     justify-content: center;
     position: relative;
-
+    overflow: hidden;
 
 }
 
@@ -139,32 +138,36 @@ nav ul{
 
 .cloud{
     position: absolute;
+    pointer-events: none;
     top: 0%;
     right: 0%;
 
 }
 
 .moving-cloud-1{
-
+    z-index: -1;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2{
     top: 20%;
-    z-index: -1;
+    z-index: -2;
     opacity: 1;
+    animation: cloudAnimation 4s infinite alternate ease-in-out;
 
 }
 
-@keyframes cloudAnimation{
-    0%{
-        background: lightblue;
+.locations-head h3{
+    background: rgba(19,28,39,0.8);
+    -webkit-text-fill-color:white;
+}
 
+@keyframes cloudAnimation{
+    from{
+        transform: translate(10%,-10%);
     }
-    25%{
-        background: rgb(35,98,119);
-    }
-    50%{
-        background: rgb(99,35,119);
+    to{
+        transform: translate(0%,0%);
     }
     
 }
